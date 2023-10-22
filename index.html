@@ -1,0 +1,1035 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font Awsome Link -->
+    <script src="https://kit.fontawesome.com/49c1053e35.js" crossorigin="anonymous"></script>
+    <!-- <div class="dropdown-divider"></div> -->
+
+    <title>Rafter</title>
+  </head>
+  <body>
+    <section class="navigationBar" id="navigationBar">
+        <div class="navigationBarContainer">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo Image" class="logo"></a>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button> -->
+              <!-- Button trigger modal -->
+                <button type="button" class="btn toogleBTN" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+  
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content model-content1">
+                            <div class="modal-header">
+                                <img src="assets/images/logo-footer.png" alt="logoImg" class="logo">
+                                <button type="button" class="close" data-dismiss="modal"><i class="fa-solid fa-xmark" style="color: gainsboro;"></i></button>
+                                <br>
+                                <div class="navSearch">
+                                    <form action="" class="popUpForm">
+                                        <input type="text" placeholder="Type hear to search..." class="popupSearch" />
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <span class="popUpLine"></span>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle navsLInks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          HOME
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-menu navLinkDDDiv" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item navsLinkDD" href="#">Home 01</a>
+                                          <a class="dropdown-item navsLinkDD" href="#">Home 02</a>
+                                          <a class="dropdown-item navsLinkDD" href="#">Home 03</a>
+                                          <a class="dropdown-item navsLinkDD" href="#">Home 04</a>
+                                        </div>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link navsLInks" href="#">ABOUT</a>
+                                      </li>
+                                      <div class="dropdown-divider"></div>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle navsLInks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          PAGES
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-menu navLinkDDDiv" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item navsLinkDD" href="#">Teams</a>
+                                          <a class="dropdown-item navsLinkDD" href="#">Projects</a>
+                                          <a class="dropdown-item navsLinkDD" href="#">Project Details</a>
+                                          <a class="dropdown-item navsLinkDD" href="#">FAQs</a>
+                                        </div>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle navsLInks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          SERVICES
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-menu navLinkDDDiv" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item navsLinkDD" href="#">Services</a>
+                                          <a class="dropdown-item navsLinkDD" href="#">Service details</a>
+                                        </div>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle navsLInks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          BLOG
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-menu navLinkDDDiv" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item navsLinkDD" href="#">Blog Grid</a>
+                                          <a class="dropdown-item navsLinkDD" href="#">Blog Standard</a>
+                                          <a class="dropdown-item navsLinkDD" href="#">Blog Detail</a>
+                                        </div>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link navsLInks" href="#">CONTACT</a>
+                                      </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="contactInfo">
+                                    <h4>Contact Info</h4>
+                                    <span class="conInfoS1"><i class="fa-solid fa-location-dot conInfoIcon"></i></span><span class="conInfoS2">14/A Pure Street City</span>
+                                    <br><br>
+                                    <span class="conInfoS1"><i class="fa-solid fa-phone conInfoIcon"></i></span><span class="conInfoS2">+91 8220936646</span>
+                                    <br><br>
+                                    <span class="conInfoS1"><i class="fa-regular fa-envelope conInfoIcon"></i></span><span class="conInfoS2">jaya@gmail.com</span>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="socialMedia">
+                                    <span class="smSpan"><i class="fa-brands fa-facebook-f smIcon"></i></span>
+                                    <span class="smSpan"><i class="fa-brands fa-twitter smIcon"></i></span>
+                                    <span class="smSpan"><i class="fa-brands fa-linkedin-in smIcon"></i></span>
+                                    <span class="smSpan"><i class="fa-brands fa-youtube smIcon"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse smallDisplay" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown navLI">
+                        <a class="nav-link dropdown-toggle navLinks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Home
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item dropDownLink" href="#">Home 01</a>
+                          <a class="dropdown-item dropDownLink" href="#">Home 02</a>
+                          <a class="dropdown-item dropDownLink" href="#">Home 03</a>
+                          <a class="dropdown-item dropDownLink" href="#">Home 04</a>
+                        </div>
+                      </li>
+                    <li class="nav-item navLI">
+                      <a class="nav-link navLinks" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown navLI">
+                      <a class="nav-link dropdown-toggle navLinks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pages
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item dropDownLink" href="#">Teams</a>
+                        <a class="dropdown-item dropDownLink" href="#">Projects</a>
+                        <a class="dropdown-item dropDownLink" href="#">Project Details</a>
+                        <a class="dropdown-item dropDownLink" href="#">FAQs</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown navLI">
+                        <a class="nav-link dropdown-toggle navLinks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item dropDownLink" href="#">Services</a>
+                            <a class="dropdown-item dropDownLink" href="#">Service Details</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown navLI">
+                        <a class="nav-link dropdown-toggle navLinks" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Blog
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item dropDownLink" href="#">Blog Grid</a>
+                          <a class="dropdown-item dropDownLink" href="#">Blog Standard</a>
+                          <a class="dropdown-item dropDownLink" href="#">Blog Detail</a>
+                        </div>
+                    </li> 
+                    <li class="nav-item navLI">
+                        <a class="nav-link navLinks" href="#">Contact</a>
+                    </li> 
+                  </ul>
+                  <button class="btn my-2 my-sm-0 mainBtn" type="button" data-toggle="modal" data-target="#myModal"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content model-content2">
+                            <div class="modalHead">
+                              <img src="assets/images/logo-footer.png" alt="logoIMg" class="logo">
+                              <button type="button" class="close" data-dismiss="modal"><i class="fa-solid fa-xmark" style="color: gainsboro;"></i></button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="" class="popUpForm">
+                                <input type="text" placeholder="Type hear to search..." class="popupSearch" />
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span class="popUpLine"></span>
+                              </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="home" id="home">
+        <div class="homeContainer">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active homeImg1">
+                    <div class="contact">
+                        <div class="container cont">
+                            <div class="row">
+                                <div class="col-3 colls">
+                                    <i class="fa-solid fa-location-dot conIcon"></i>
+                                    <span class="conTop">Location:</span>
+                                    <p class="conDet">14/A Pure street city.</p>
+                                </div>
+                                <div class="col-3 colls">
+                                    <i class="fa-regular fa-envelope conIcon"></i>
+                                    <span class="conTop">Mail:</span>
+                                    <p class="conDet">Jayaprakash@gmail.com</p>
+                                </div>
+                                <div class="col-3 colls">
+                                    <i class="fa-solid fa-phone conIcon"></i>
+                                    <span class="conTop">Phone:</span>
+                                    <p class="conDet">+91 8220936646</p>
+                                </div>
+                                <div class="col-3 collss">
+                                    <span class="dis">Discover More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="homeTopic container">
+                        <h5>Welcome to Roofing</h5>
+                        <h1>Discover The Rather Effective Roofing Services</h1>
+                        <div class="clints">
+                            <img src="assets/images/clint1.jpg" alt="" class="clint1">
+                            <img src="assets/images/clint2.jpg" alt="" class="clint2">
+                            <img src="assets/images/clint3.jpg" alt="" class="clint3">
+                            <img src="assets/images/clint4.jpg" alt="" class="clint4">
+                            <span>Trusted Clint</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item homeImg2">
+                    <div class="contact">
+                        <div class="container cont">
+                            <div class="row">
+                                <div class="col-3 colls">
+                                    <i class="fa-solid fa-location-dot conIcon"></i>
+                                    <span class="conTop">Location:</span>
+                                    <p class="conDet">14/A Pure street city.</p>
+                                </div>
+                                <div class="col-3 colls">
+                                    <i class="fa-regular fa-envelope conIcon"></i>
+                                    <span class="conTop">Mail:</span>
+                                    <p class="conDet">Jayaprakash@gmail.com</p>
+                                </div>
+                                <div class="col-3 colls">
+                                    <i class="fa-solid fa-phone conIcon"></i>
+                                    <span class="conTop">Phone:</span>
+                                    <p class="conDet">+91 8220936646</p>
+                                </div>
+                                <div class="col-3 collss">
+                                    <span class="dis">Discover More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="homeTopic container">
+                        <h5>Welcome to Roofing</h5>
+                        <h1>Discover The Rather Effective Roofing Services</h1>
+                        <div class="clints">
+                            <img src="assets/images/clint1.jpg" alt="" class="clint1">
+                            <img src="assets/images/clint2.jpg" alt="" class="clint2">
+                            <img src="assets/images/clint3.jpg" alt="" class="clint3">
+                            <img src="assets/images/clint4.jpg" alt="" class="clint4">
+                            <span>Trusted Clint</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item homeImg3">
+                    <div class="contact">
+                        <div class="container cont">
+                            <div class="row">
+                                <div class="col-3 colls">
+                                    <i class="fa-solid fa-location-dot conIcon"></i>
+                                    <span class="conTop">Location:</span>
+                                    <p class="conDet">14/A Pure street city.</p>
+                                </div>
+                                <div class="col-3 colls">
+                                    <i class="fa-regular fa-envelope conIcon"></i>
+                                    <span class="conTop">Mail:</span>
+                                    <p class="conDet">Jayaprakash@gmail.com</p>
+                                </div>
+                                <div class="col-3 colls">
+                                    <i class="fa-solid fa-phone conIcon"></i>
+                                    <span class="conTop">Phone:</span>
+                                    <p class="conDet">+91 8220936646</p>
+                                </div>
+                                <div class="col-3 collss">
+                                    <span class="dis">Discover More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="homeTopic container">
+                        <h5>Welcome to Roofing</h5>
+                        <h1>Discover The Rather Effective Roofing Services</h1>
+                        <div class="clints">
+                            <img src="assets/images/clint1.jpg" alt="" class="clint1">
+                            <img src="assets/images/clint2.jpg" alt="" class="clint2">
+                            <img src="assets/images/clint3.jpg" alt="" class="clint3">
+                            <img src="assets/images/clint4.jpg" alt="" class="clint4">
+                            <span>Trusted Clint</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="aboutContainer container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 aboutBox" data-aos="fade-up">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-6 aboutLeft">
+                                    <span><i class="fa-solid fa-hotel aboutIcon"></i></span>
+                                    <h4>Residential</h4>
+                                </div>
+                                <div class="col-6 aboutRight">
+                                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="" class="aboutA">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 aboutBox" data-aos="fade-up">
+                        <div class="col-12">
+                            <div class="row">
+                            <div class="col-6 aboutLeft">
+                                <span><i class="fa-solid fa-landmark aboutIcon"></i></span>
+                                <h4>Commercial</h4>
+                            </div>
+                            <div class="col-6 aboutRight">
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                <div class="dropdown-divider"></div>
+                                <a href="" class="aboutA">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 aboutBox" data-aos="fade-up">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-6 aboutLeft">
+                                    <span><i class="fa-solid fa-city aboutIcon"></i></span>
+                                    <h4>Residential</h4>
+                                </div>
+                                <div class="col-6 aboutRight">
+                                    <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="" class="aboutA">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about1" id="about1" style="margin-top: 70px;">
+        <div class="about1Container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img src="assets/images/about-1.jpg" alt="" class="img-fluid">
+                        <div class="bottom-left">
+                            <div class="row">
+                                <div class="col-6 imgleft">
+                                    <i class="fa-solid fa-building-shield blIcon"></i>
+                                </div>
+                                <div class="col-6 imgRight">
+                                    <h3>1377+</h3>
+                                    <p>Residential Projects Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12" style="padding: 40px 20px;">
+                        <div class="about1head" data-aos="fade-up">
+                            <h1>Profesional Roof Repair Services Since 2000</h1>
+                            <p style="color: #787878; line-height: 1.6;">Quisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus, id volutpat magna. Morbi consequat porttitor fermentum. Nulla vestibulum tincidunt viverra. Vestibulum accumsanQuisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus</p>
+                        </div>
+                        <div class="about1body" data-aos="fade-up">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-people-roof about1Icons"></i>
+                                </div>
+                                <div class="col-4">
+                                    <p style="color: #102039;">Solution for Residential Roofing</p>
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa-solid fa-torii-gate about1Icons"></i>
+                                </div>
+                                <div class="col-4">
+                                    <p style="color: #102039;">Solution for Commercial Roofing</p>
+                                </div>
+                            </div>
+                            <p style="color: #787878; line-height: 1.6;">"Everything we do at Home Instead CareGiver is driven by our universal mission: To enhance the lives of aging adults and their families."</p>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="about1footer" style="margin-top: 20px;" data-aos="fade-up">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/images/about1footer.jpg" alt="" class="about1footerImg">
+                                </div>
+                                <div class="col-4">
+                                    <h6>Max Benjamin</h6>
+                                    <p>Director</p>
+                                </div>
+                                <div class="col-4">
+                                    <img src="assets/images/signature.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about2" id="about2" style="margin-top: 50px;">
+        <div class="about2Container container-fluid">
+            <div class="about2Contents container">
+                <div class="about2Head" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <h1>We'r Prodviding Quality Roofing Services</h1>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Trage agile frameworks to provide a robust synopsis for high level overviews. Iterative approachesTrage agile frameworks to provide a robust synopsis for high level overviews. Iterative</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about2body" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="about2BodyBox">
+                                <i class="fa-solid fa-people-roof"></i>
+                                <h4>Roof Installation</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="about2BodyBox">
+                                <i class="fa-solid fa-house-chimney-crack"></i>
+                                <h4>Roof Cornering</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="about2BodyBox">
+                                <i class="fa-solid fa-store"></i>
+                                <h4>Roof Design</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="about2BodyBox">
+                                <i class="fa-solid fa-warehouse"></i>
+                                <h4>Roof Layer Fixing</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="about2BodyBox">
+                                <i class="fa-solid fa-tower-observation"></i>
+                                <h4>Roof Repair</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="about2BodyBox">
+                                <i class="fa-solid fa-industry"></i>
+                                <h4>Roof Corner</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about2footer" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 a2footerLeft">
+                            <div class="a2footer1">
+                                <h3>Roof Frame Design</h3>
+                                <p>Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae…</p>
+                            </div>
+                            <div class="a2footer2">
+                                <p>Our Roof Installation Include:</p>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <ul>
+                                            <li><i class="fa-regular fa-circle-check a2footerIcon"></i>Residential Roofing</li>
+                                            <li><i class="fa-regular fa-circle-check a2footerIcon"></i>Damage Roofing Repair</li>
+                                            <li><i class="fa-regular fa-circle-check a2footerIcon"></i>Build Roof Standard</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <ul>
+                                            <li><i class="fa-regular fa-circle-check a2footerIcon"></i>Window Installation</li>
+                                            <li><i class="fa-regular fa-circle-check a2footerIcon"></i>Commercial Roofing</li>
+                                            <li><i class="fa-regular fa-circle-check a2footerIcon"></i>Mission statement</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="rm">Read More <i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 a2footerRight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="works" id="works" style="margin-top: 50px;">
+        <div class="worksContainer">
+            <div class="container">
+                <div class="common" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="commonHead">Explore Latest Works</h1>
+                    <p class="commonP">Trage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate</p>
+                </div>
+                <div class="workTypes" data-aos="fade-up" data-aos-duration="2000">
+                    <span class="col-sm-6">All</span>
+                    <span class="col-sm-6">Commercial</span>
+                    <span class="col-sm-6">Repair</span>
+                    <span class="col-sm-6">Redential</span>
+                </div>
+                <div class="workings">
+                    <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-lg-4 col-md-4 col-sm-12 workImg">
+                            <img src="assets/images/work1.jpg" alt="" class="img-fluid wImg">
+                            <div class="bottom-left1"><span class="www">Moder Pattern Style</span></div>
+                            <div class="centered"><i class="fa-solid fa-plus workIcon"></i></div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 workImg">
+                            <img src="assets/images/work-big-2.jpg" alt="" class="img-fluid wImg">
+                            <div class="bottom-left1"><span class="www">Moder Pattern Style</span></div>
+                            <div class="centered"><i class="fa-solid fa-plus workIcon"></i></div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 workImg">
+                            <img src="assets/images/work-big-3.jpg" alt="" class="img-fluid wImg">
+                            <div class="bottom-left1"><span class="www">Moder Pattern Style</span></div>
+                            <div class="centered"><i class="fa-solid fa-plus workIcon"></i></div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 20px;" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-lg-4 col-md-4 col-sm-12 workImg">
+                            <img src="assets/images/work-big-4.jpg" alt="" class="img-fluid wImg">
+                            <div class="bottom-left1"><span class="www">Moder Pattern Style</span></div>
+                            <div class="centered"><i class="fa-solid fa-plus workIcon"></i></div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 workImg">
+                            <img src="assets/images/work-big-5.jpg" alt="" class="img-fluid wImg">
+                            <div class="bottom-left1"><span class="www">Moder Pattern Style</span></div>
+                            <div class="centered"><i class="fa-solid fa-plus workIcon"></i></div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 workImg">
+                            <img src="assets/images/work-big-6-2048x1542.jpg" alt="" class="img-fluid wImg">
+                            <div class="bottom-left1"><span class="www">Moder Pattern Style</span></div>
+                            <div class="centered"><i class="fa-solid fa-plus workIcon"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="award" id="award">
+        <div class="awardContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 awardLeft">
+                        <div class="alstart">
+                            <h4>AWARDS & RECONIZATION</h4>
+                            <h2 class="commonHead">Quality Improvement Awards of our Company.</h2>
+                            <p class="commonP">Welcome, Here, you can find answers to some of the most common questions we receive about our roofing services. If you have a question that is not answered here, please feel free to contact us.</p>
+                        </div>
+                        <div class="alend">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/images/awards1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-4">
+                                    <img src="assets/images/awards2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-4">
+                                    <img src="assets/images/awards3.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 awardRight">
+                        <div class="arhead">
+                            <h4>Book Appointment</h4>
+                            <h2>Book Roofing Inspection</h2>
+                        </div>
+                        <div class="arForm">
+                            <form>
+                                <div class="form-row" style="">
+                                  <div class="col">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                  </div>
+                                  <div class="col">
+                                    <input type="text" class="form-control" placeholder="Phone">
+                                  </div>
+                                </div>
+                                <div class="form-row" style="margin-top: 25px;">
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Email Address">
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Your Location">
+                                    </div>
+                                  </div>
+                                  <div class="form-row" style="margin-top: 25px;">
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Chose Time">
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Select Date">
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-top: 25px;">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write a Message"></textarea>
+                                </div>
+                                <button type="submit" class="subBtn"><span>Submit Now</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="expert" id="expert" style="margin-top: 70px;">
+        <div class="expertContainer">
+            <div class="container">
+                <div class="common" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="commonHead">The Roofing Experts</h1>
+                    <p class="commonP">Trage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 expertLeft" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="expertImg">
+                            <img src="assets/images/Expert 1.jpg" alt="" class="img-fluid">
+                            <div class="bottom-left-Expert">
+                                <span class="expertSpan"><i class="fa-brands fa-facebook-f expertIcon"></i></span>
+                                <span class="expertSpan"><i class="fa-brands fa-instagram expertIcon"></i></span>
+                                <span class="expertSpan"><i class="fa-brands fa-twitter expertIcon"></i></span>
+                                <span class="expertSpan"><i class="fa-brands fa-linkedin-in expertIcon"></i></span>
+                            </div>
+                        </div>
+                        <div class="expertDetail">
+                            <h3>Georgie Haynes</h3>Romada Co.
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 expertLeft" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="expertImg">
+                            <img src="assets/images/team-2.jpg" alt="" class="img-fluid">
+                            <div class="bottom-left-Expert">
+                                <span class="expertSpan"><i class="fa-brands fa-facebook-f expertIcon"></i></span>
+                                <span class="expertSpan"><i class="fa-brands fa-instagram expertIcon"></i></span>
+                                <span class="expertSpan"><i class="fa-brands fa-twitter expertIcon"></i></span>
+                                <span class="expertSpan"><i class="fa-brands fa-linkedin-in expertIcon"></i></span>
+                            </div>
+                        </div>
+                        <div class="expertDetail">
+                            <h3>George Clooney</h3>Romada Co.
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 expertLeft" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="expertImg">
+                            <img src="assets/images/team-1.jpg" alt="" class="img-fluid">
+                            <div class="bottom-left-Expert">
+                                <span class="expertSpan"><i class="fa-brands fa-facebook-f expertIcon"></i></span>
+                                <span class="expertSpan"><i class="fa-brands fa-instagram expertIcon"></i></span>
+                                <span class="expertSpan"><i class="fa-brands fa-twitter expertIcon"></i></span>
+                                <span class="expertSpan"><i class="fa-brands fa-linkedin-in expertIcon"></i></span>
+                            </div>
+                        </div>
+                        <div class="expertDetail">
+                            <h3>Arnika Sarkar</h3>Romada Co.
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whyUs" id="whyUs" style="margin-top: 70px;">
+        <div class="whyUsContainer">
+            <div class="container">
+                <div class="common" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="commonHead">Why Choose Us</h1>
+                    <p class="commonP">Trage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate</p>
+                </div>
+                <div class="whyUsContent" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <div class="top">
+                                <i class="fa-solid fa-shield whyIcon"></i>
+                                <h4 class="whyH4">Modifing Roofing</h4>
+                                <p class="whyP">When most people think of a roof, they only think of shingles. A roofing system, on the other hand, farcompli</p>
+                            </div>
+                            <div class="bottom">
+                                <i class="fa-solid fa-dharmachakra whyIcon"></i>
+                                <h4 class="whyH4">Roof Renovation</h4>
+                                <p class="whyP">When most people think of a roof, they only think of shingles. A roofing system, on the other hand, farcompli</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <img src="assets/images/home.png" alt="" class="img-fluid home">
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <div class="top">
+                                <i class="fa-solid fa-chess-rook whyIcon"></i>
+                                <h4 class="whyH4">Roof Installation</h4>
+                                <p class="whyP">When most people think of a roof, they only think of shingles. A roofing system, on the other hand, farcompli</p>
+                            </div>
+                            <div class="bottom">
+                                <i class="fa-regular fa-hospital whyIcon"></i>
+                                <h4 class="whyH4">New Roofing</h4>
+                                <p class="whyP">When most people think of a roof, they only think of shingles. A roofing system, on the other hand, farcompli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ourClint" id="ourClint">
+        <div class="ourClint">
+            <div class="container">
+                <div class="common" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="commonHead">What Our Clients Says</h1>
+                    <p class="commonP">Trage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate</p>
+                </div>
+                <div class="ourClintContent">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 col-md-12 clintMargin" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="clintBox">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                                        <div class="ourClintImgDiv">
+                                            <img src="assets/images/testi-1.jpg" alt="" class="clintssImg">
+                                            <span><i class="fa-solid fa-quote-left clintssIcon"></i></span>
+                                        </div>
+                                        <div class="ourClintInfoDiv">
+                                            <h4>Beth Mooney</h4>
+                                            <p>Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-md-12 clintMargin" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="clintBox">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                                        <div class="ourClintImgDiv">
+                                            <img src="assets/images/testi-3.jpg" alt="" class="clintssImg">
+                                            <span><i class="fa-solid fa-quote-left clintssIcon"></i></span>
+                                        </div>
+                                        <div class="ourClintInfoDiv">
+                                            <h4>Francine Floreani</h4>
+                                            <p>Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-md-12 clintMargin" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="clintBox">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                                        <div class="ourClintImgDiv">
+                                            <img src="assets/images/testi-2.jpg" alt="" class="clintssImg">
+                                            <span><i class="fa-solid fa-quote-left clintssIcon"></i></span>
+                                        </div>
+                                        <div class="ourClintInfoDiv">
+                                            <h4>Modifing Roofing</h4>
+                                            <p>Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="updates" id="updates">
+        <div class="updateContainer">
+            <div class="container">
+                <div class="common" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="commonHead">Latest News Updates</h1>
+                    <p class="commonP">Trage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate</p>
+                </div>
+                <div class="updateContant" style="margin-top: 30px;">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 clinting" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="carti">
+                                    <img src="assets/images/work1.jpg" class="card-img-top cartImg" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="cartBody">
+                                                <span><i class="fa-solid fa-user"></i>By Raffer</span>
+                                                <span><i class="fa-regular fa-message"></i>(0)</span>
+                                            </div>
+                                            <hr>
+                                            <div class="cartFoot">
+                                                <h3>Best Repairing For Leakage Roof In</h3>
+                                                <p>There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 vertical">
+                                            <p><i class="fa-solid fa-arrow-up"></i> Read more</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 clinting" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="carti">
+                                    <img src="assets/images/blog-2.jpg" class="card-img-top cartImg" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="cartBody">
+                                                <span><i class="fa-solid fa-user"></i>By Raffer</span>
+                                                <span><i class="fa-regular fa-message"></i>(0)</span>
+                                            </div>
+                                            <hr>
+                                            <div class="cartFoot">
+                                                <h3>Best Repairing For Leakage Roof In</h3>
+                                                <p>There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 vertical">
+                                            <p><i class="fa-solid fa-arrow-up"></i> Read more</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 clinting" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="card w-100" style="width: 18rem;">
+                                <div class="carti">
+                                    <img src="assets/images/work-big-6-2048x1542.jpg" class="card-img-top cartImg" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="cartBody">
+                                                <span><i class="fa-solid fa-user"></i>By Raffer</span>
+                                                <span><i class="fa-regular fa-message"></i>(0)</span>
+                                            </div>
+                                            <hr>
+                                            <div class="cartFoot">
+                                                <h3>Best Repairing For Leakage Roof In</h3>
+                                                <p>There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 vertical">
+                                            <p><i class="fa-solid fa-arrow-up"></i> Read more</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footers" id="footers">
+        <div class="footersContainer">
+            <div class="container">
+                <div class="footersHead">
+                    <nav class="navbar navbar-light">
+                        <a class="navbar-brand sub">Subscribe Our Newsletter</a>
+                        <form class="form-inline">
+                          <input class="form-control mr-sm-2" type="search" placeholder="Email Address" aria-label="Search">
+                          <button class="btn my-2 my-sm-0 footerBtn" type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                      </nav>
+                </div>
+                <hr class="footHr">
+                <div class="footersBody">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 fotterBox">
+                            <div class="h">
+                                <img src="assets/images/logo-footer.png" alt="" class="logo" style="margin-bottom: 40px;">
+                            </div>
+                            <div class="b">
+                                <p style="margin-bottom: 40px;">Indignation and dislike men who to are so beguiled and demor</p>
+                            </div>
+                            <div class="f" style="margin-bottom: 40px;">
+                                <h5>Working Hours</h5>
+                                <p>Monday: 10.00AM - 4.00PM</p>
+                                <p>Tuesday: 10.00AM - 4.00PM</p>
+                                <p>Friday: Close</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 fotterBox">
+                            <div class="h">
+                                <h4 class="footH4">Latest Post</h4>
+                            </div>
+                            <div class="b">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div>
+                                            <img src="assets/images/blog-2.jpg" alt="" class="footinggImg">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <span style="font-size: small;"><i class="fa-regular fa-calendar-days"></i>23 August, 2023</span>
+                                        <p class="fooP">Why Roofing are factmake 17 Reason...</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="row" style="margin-top: 15px;">
+                                    <div class="col-6">
+                                        <div>
+                                            <img src="assets/images/blog-details.jpg" alt="" class="footinggImg">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <span style="font-size: small;"><i class="fa-regular fa-calendar-days"></i>23 August, 2023</span>
+                                        <p class="fooP">A Private Limited is the Most...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 fotterBox footerBoxLi">
+                            <h4 class="footH4">Our Services</h4>
+                            <ul>
+                                <li>Roof Renovation</li>
+                                <li>Roofing Layers</li>
+                                <li>Roof Installation</li>
+                                <li>Corner Fixing</li>
+                                <li>Damage Roof</li>
+                                <li>Roof Animation</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 fotterBox">
+                            <h4 class="footH4">Instagram</h4>
+                            <div class="instaImg">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="col-12">
+                                            <img src="assets/images/insta-big-5.jpg" alt="" class="instaPic">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="col-12">
+                                            <img src="assets/images/blog-2.jpg" alt="" class="instaPic">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="col-12">
+                                            <img src="assets/images/work-big-5.jpg" alt="" class="instaPic">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 10px;">
+                                    <div class="col-4">
+                                        <div class="col-12">
+                                            <img src="assets/images/work-big-3.jpg" alt="" class="instaPic">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="col-12">
+                                            <img src="assets/images/about-1.jpg" alt="" class="instaPic">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="col-12">
+                                            <img src="assets/images/insta-big-6.jpg" alt="" class="instaPic">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footHr">
+            <div class="container">
+                <div class="footer__copy_write">
+                    <p class="copy__right">Copyright © 2023 ThemeJunction. All Rights Reserved.</p>
+                    <div class="links">
+                        <span><a href="" class="footA">Praivacy Policy and Terms & Conditions</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
+
+<script>
+    AOS.init();
+</script>
